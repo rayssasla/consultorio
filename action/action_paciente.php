@@ -21,6 +21,8 @@ switch($action){
         
     break;
     case 'excluir':
+        $paciente->id = $_GET['id'];
+        $paciente->excluir();
 
     break;
 }
