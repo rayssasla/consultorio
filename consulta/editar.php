@@ -10,7 +10,7 @@ $consulta = Consulta::buscarPorId($id);
 <main class="container">
     <h1>Editar Consulta</h1>
     <form method="POST" action="/consultorio/action/action_consulta.php?action=alterar&id=<?= $id ?>">
-        ID do Dentista * : <input name="dentista_id" type="number" value="<?= $consulta->dentista_id ?>" class="form-control" required>
+        ID do Pediatra * : <input name="pediatra_id" type="number" value="<?= $consulta->pediatra_id ?>" class="form-control" required>
         Data e Hora * : <input name="data_hora" type="datetime-local" value="<?= date('Y-m-d\TH:i', strtotime($consulta->data_hora)) ?>" class="form-control" required>
         Valor Total * : <input name="valor_total" type="text" value="<?= $consulta->valor_total ?>" class="form-control" required>
         Valor Pago : <input name="valor_pago" type="text" value="<?= $consulta->valor_pago ?>" class="form-control">

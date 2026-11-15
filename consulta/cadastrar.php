@@ -6,7 +6,7 @@ include('../includes/rodape.php');
 <main class="container">
     <h1>Cadastrar Consulta</h1>
     <form method="POST" action="/consultorio/action/action_consulta.php?action=cadastrar">
-        ID do Dentista * : <input name="dentista_id" type="number" class="form-control" required>
+        ID do Pediatra * : <input name="pediatra_id" type="number" class="form-control" required>
         Data e Hora * : <input name="data_hora" type="datetime-local" class="form-control" required>
         Valor Total * : <input name="valor_total" type="text" class="form-control" required>
         Valor Pago : <input name="valor_pago" type="text" class="form-control">
