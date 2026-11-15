@@ -16,7 +16,7 @@ $consultas = Consulta::listar();
     <table class="table table-hover">
         <thead class="table-primary">
             <tr>
-                <th>Pediatra ID</th>
+                <th>dentista ID</th>
                 <th>Data e Hora</th>
                 <th>Valor Total</th>
                 <th>Valor Pago</th>
@@ -32,7 +32,7 @@ $consultas = Consulta::listar();
             <?php
             foreach ($consultas as $consulta) {
                 echo "<tr>
-                    <td>" . $consulta->pediatra_id . "</td>
+                    <td>" . $consulta->dentista_id . "</td>
                     <td>" . date("d/m/Y H:i", strtotime($consulta->data_hora)) . "</td>
                     <td>R$ " . number_format($consulta->valor_total, 2, ',', '.') . "</td>
                     <td>R$ " . number_format($consulta->valor_pago, 2, ',', '.') . "</td>
